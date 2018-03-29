@@ -4,7 +4,7 @@
 public class Fibonacci{
     //public static int[] save = null;
     public static void  main(String[] args){
-        System.out.println(Fibonacci(5));
+        System.out.println(Fibonacci(5000));
     }
 /*
 递归会占用大量的内存，因为每次递归的结果没有保存，造成大量的重复计算
@@ -28,13 +28,13 @@ public class Fibonacci{
     /*
     动态规划，增加了空间复杂度
      */
-    public static int Fibonacci(int n){
+    public static long Fibonacci(int n){
         /*初始化，one为n-2项，two为n-1项
           在数列中排序为： one two result
         */
-        int one = 0;
-        int two = 1;
-        int result = 0;
+        long one = 0;
+        long two = 1;
+        long result = 0;
 
         if (n <= 0) {
             return one;
@@ -42,7 +42,7 @@ public class Fibonacci{
             return two;
         }
         //从2开始，利用前两项相加
-        for (int i = 2; i <= n; i++) {
+        for (long i = 2; i <= n; i++) {
             result = one + two;
             one = two;
             two = result;
