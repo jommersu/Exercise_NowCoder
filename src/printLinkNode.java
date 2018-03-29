@@ -20,7 +20,7 @@ public class printLinkNode {
     }
 }
 
-   public class ListNode {
+   class ListNode {
         int val;
         ListNode next = null;
                 ListNode(int val) {
