@@ -1,6 +1,9 @@
 /*
 斐波那契数列，输入n，输出斐波那契数列的第n项
  */
+/*
+分析：注意起始的边界，可以先写出公式
+ */
 public class Fibonacci{
     //public static int[] save = null;
     public static void  main(String[] args){
