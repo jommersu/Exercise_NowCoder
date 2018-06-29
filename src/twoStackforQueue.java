@@ -2,6 +2,9 @@ import java.util.Stack;
 
 /*
 用两个栈实现队列
+思路：两个栈刚好先进先出，但是一定要满足两个条件：
+栈2为空时才才可以压入栈2
+栈1出栈压进栈2时必须一次压完
  */
 public class twoStackforQueue {
     public static void main(String[] args) {
