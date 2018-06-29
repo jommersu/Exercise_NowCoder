@@ -1,5 +1,7 @@
 /*
+从尾到头打印链表每个节点的值
 输入一个链表，从尾到头打印链表每个节点的值。
+思路：从尾到头，立即想到后进先出的栈结构
  */
 import java.util.ArrayList;
 import java.util.Stack;
