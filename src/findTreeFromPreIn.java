@@ -1,5 +1,9 @@
 /*
 重建二叉树
+利用前序和中序重建
+前序：root-left-right
+中序：left-root-right
+后序：left-right-root
  */
 
 /*
