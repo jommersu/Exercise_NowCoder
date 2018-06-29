@@ -1,5 +1,9 @@
 /*
+反转链表
 输入一个链表，反转链表后，输出链表的所有元素。
+思路：利用pre和next；两个指针
+pre用来使得cur改变指向，next保存cur的初始next指向。
+然后三个指针向右移动，注意点是cur的临界条件
  */
 
 public class reverseList {
